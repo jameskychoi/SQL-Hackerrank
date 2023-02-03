@@ -63,7 +63,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
-WHERE CITY LIKE "a%" or CITY LIKE "e%" or CITY LIKE "i%" or CITY LIKE "o%" or CITY LIKE "u%"
+WHERE CITY LIKE "a%" OR CITY LIKE "e%" OR CITY LIKE "i%" OR CITY LIKE "o%" OR CITY LIKE "u%"
 ```
 ### **[Weather Observation Station 7](https://www.hackerrank.com/challenges/weather-observation-station-7)**
 
@@ -87,7 +87,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
-WHERE CITY LIKE "%a" or CITY LIKE "%e" or CITY LIKE "%i" or CITY LIKE "%o" or CITY LIKE "%u"
+WHERE CITY LIKE "%a" OR CITY LIKE "%e" OR CITY LIKE "%i" OR CITY LIKE "%o" OR CITY LIKE "%u"
 ```
 ### **[Weather Observation Station 8](https://www.hackerrank.com/challenges/weather-observation-station-8)**
 
@@ -192,7 +192,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
-WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u') or LEFT(CITY,1) NOT IN ('a','e','i','o','u','A','E','I','O','U')
+WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u') OR LEFT(CITY,1) NOT IN ('a','e','i','o','u','A','E','I','O','U')
 ```
 ### **[Weather Observation Station 12](https://www.hackerrank.com/challenges/weather-observation-station-12)**
 
