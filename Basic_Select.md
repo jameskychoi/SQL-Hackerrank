@@ -112,4 +112,11 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY RLIKE '^[aeiouAEIOU].*[aeiouAEIOU]$';
+/* note:
+RLIKE is the regex LIKE, 
+^ means starting
+. means any character
+* means multiple occurence of previous character, in this case the "." 
+$ means closing
+*/
 ```
