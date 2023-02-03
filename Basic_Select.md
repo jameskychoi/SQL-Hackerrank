@@ -61,7 +61,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 **Solution**
 ```sql
-SELECT CITY
+SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY LIKE "a%" or CITY LIKE "e%" or CITY LIKE "i%" or CITY LIKE "o%" or CITY LIKE "u%"
 ```
