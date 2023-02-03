@@ -38,12 +38,9 @@ Not A Triangle
 ```
 *Explanation*
 
-Explanation
-
-Values in the tuple $(20,20,23)$
-form an Isosceles triangle, because .
-Values in the tuple form an Equilateral triangle, because . Values in the tuple form a Scalene triangle, because .
-Values in the tuple cannot form a triangle because the combined value of sides and is not larger than that of side .
+Values in the tuple $(20,20,23)$ form an Isosceles triangle, because $A \equiv B$.
+Values in the tuple $(20,20,20)$ form an Equilateral triangle, because . Values in the tuple $(20,21,22)$form a Scalene triangle, because .
+Values in the tuple $(13,14,30)$ cannot form a triangle because the combined value of sides and is not larger than that of side .
 ### **Solution**
 ```sql
 SELECT 
