@@ -2,7 +2,7 @@
 
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 
-Input Format
+**Input Format**
 
 The STATION table is described as follows:
 
@@ -30,7 +30,7 @@ PQRS 4
 
 When ordered alphabetically, the CITY names are listed as ABC, DEF, PQRS, and WXY, with the respective lengths 3,3,4,3,3,4, and 33. The longest-named city is obviously PQRS, but there are 33 options for shortest-named city; we choose ABC, because it comes first alphabetically.
 
-**Solution**
+### **Solution**
 ```sql
 SELECT CITY, length(CITY) 
 FROM STATION 
@@ -45,7 +45,7 @@ ORDER BY length(CITY) DESC, CITY ASC LIMIT 1;
 
 Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 
-Input Format
+**Input Format**
 
 The STATION table is described as follows:
 
@@ -59,9 +59,33 @@ The STATION table is described as follows:
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
-**Solution**
+### **Solution**
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
 WHERE CITY LIKE "a%" or CITY LIKE "e%" or CITY LIKE "i%" or CITY LIKE "o%" or CITY LIKE "u%"
+```
+### **[Weather Observation Station 6](https://www.hackerrank.com/challenges/weather-observation-station-6)**
+
+Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+
+**Input Format**
+
+The STATION table is described as follows:
+
+|  Field | Type |
+|---|---|
+| ID  | NUMBER |
+| CITY | VARCHAR2(21)   |
+| STATE  | VARCHAR2(2)  |
+| LAT_N |  NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+### **Solution**
+```sql
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE "%a" or CITY LIKE "%e" or CITY LIKE "%i" or CITY LIKE "%o" or CITY LIKE "%u"
 ```
