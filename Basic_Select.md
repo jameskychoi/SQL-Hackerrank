@@ -192,5 +192,5 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 ```sql
 SELECT DISTINCT CITY
 FROM STATION
-WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u') or LEFT(CITY,1) NOT IN ('a','e','i','o','u')
+WHERE RIGHT(CITY,1) NOT IN ('a','e','i','o','u') or LEFT(CITY,1) NOT IN ('a','e','i','o','u','A','E','I','O','U')
 ```
