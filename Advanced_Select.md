@@ -40,7 +40,7 @@ Not A Triangle
 
 Explanation
 
-Values in the tuple
+Values in the tuple $(20,20,23)$
 form an Isosceles triangle, because .
 Values in the tuple form an Equilateral triangle, because . Values in the tuple form a Scalene triangle, because .
 Values in the tuple cannot form a triangle because the combined value of sides and is not larger than that of side .
