@@ -247,9 +247,11 @@ Sample Input
 
 Sample Output
 
+```sql
 Ashley
 Julia
 Belvet
+```
 
 Explanation
 
