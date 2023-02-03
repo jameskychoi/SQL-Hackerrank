@@ -311,7 +311,7 @@ Patrick
 Rose
 Todd
 ```
-**Solution**
+### **Solution**
 ```sql
 SELECT name
 FROM Employee
@@ -365,7 +365,7 @@ Todd has been an employee for 5 months and earns $3396 per month.
 Joe has been an employee for 9 months and earns $3573 per month.
 We order our output by ascending employee_id.
 
-**Solution**
+### **Solution**
 ```sql
 SELECT name
 FROM Employee
