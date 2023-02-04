@@ -55,7 +55,7 @@ CASE
 END 
 FROM TRIANGLES
 ```
-
+--------------------------------------------------------------------------------
 ### **[The PADS](https://www.hackerrank.com/challenges/the-pads/problem)**
 
 Generate the following two result sets:
@@ -79,8 +79,6 @@ The OCCUPATIONS table is described as follows:
 | Occupation | String |
 
 Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
-
-Sample Input
 
 An OCCUPATIONS table that contains the following records:
 
@@ -116,6 +114,64 @@ There are a total of 2 doctors.
 There are a total of 2 singers.
 There are a total of 3 actors.
 There are a total of 3 professors.
+```
+*Explanation*
+
+The results of the first query are formatted to the problem description's specifications.
+The results of the second query are ascendingly ordered first by number of names corresponding to each profession $(2 \geq 2 \geq 3 \geq 3)$
+), and then alphabetically by profession $(doctor <= singer\, and\ actor <= professor)$.
+
+### **Solution**
+```sql
+SELECT CONCAT(Name,'(', LEFT(Occupation,1), ')')
+FROM OCCUPATIONS
+ORDER BY Name;
+
+SELECT CONCAT('There are a total of ',COUNT(Occupation),' ',LOWER(Occupation),'s.')
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation), Occupation;
+```
+### **[Occupations](https://www.hackerrank.com/challenges/occupations/problem)**
+
+Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output column headers should be Doctor, Professor, Singer, and Actor, respectively.
+
+Note: Print NULL when there are no more names corresponding to an occupation.
+
+**Input Format**
+The OCCUPATIONS table is described as follows: 
+|  Column | Type |
+|---|---|
+| Name | String |
+| Occupation | String |
+
+Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
+
+Sample Input
+
+An OCCUPATIONS table that contains the following records:
+
+*Sample Input*
+
+| Name | Occupation |
+|---|---|
+|Samantha|Doctor|
+| Julia|Actor|
+| Maria|Actor|
+| Meera|Singer|
+| Ashley|Professor|
+|Ketty|Professor|
+|Christeen|Professor|
+|Jane|Actor|
+|Jenny|Doctor|
+|Priya|Singer|
+
+*Sample Output*
+
+```sql
+Jenny    Ashley     Meera  Jane
+Samantha Christeen  Priya  Julia
+NULL     Ketty      NULL   Maria
 ```
 *Explanation*
 
