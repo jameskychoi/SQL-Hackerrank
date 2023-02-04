@@ -87,6 +87,7 @@ An OCCUPATIONS table that contains the following records:
 *Sample Input*
 
 | Name | Occupation |
+|---|---|
 |Samantha|Doctor|
 | Julia|Actor|
 
@@ -112,7 +113,7 @@ There are a total of 3 professors.
 
 The results of the first query are formatted to the problem description's specifications.
 The results of the second query are ascendingly ordered first by number of names corresponding to each profession $(2 \geq 2 \geq 3 \geq 3)$
-), and then alphabetically by profession $(doctor <= singer\ and\ actor <= professor)$.
+), and then alphabetically by profession $(doctor <= singer\, and\ actor <= professor)$.
 
 ### **Solution**
 ```sql
