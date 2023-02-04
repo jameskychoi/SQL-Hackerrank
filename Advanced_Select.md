@@ -111,8 +111,8 @@ There are a total of 3 professors.
 *Explanation*
 
 The results of the first query are formatted to the problem description's specifications.
-The results of the second query are ascendingly ordered first by number of names corresponding to each profession $(2 >= 2>= 3>= 3)$
-), and then alphabetically by profession $(doctor <= singer, and, actor <= professor)$.
+The results of the second query are ascendingly ordered first by number of names corresponding to each profession $(2 \geq 2 \geq 3 \geq 3)$
+), and then alphabetically by profession $(doctor <= singer\ and\ actor <= professor)$.
 
 ### **Solution**
 ```sql
