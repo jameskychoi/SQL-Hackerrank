@@ -90,6 +90,14 @@ An OCCUPATIONS table that contains the following records:
 |---|---|
 |Samantha|Doctor|
 | Julia|Actor|
+| Maria|Actor|
+| Meera|Singer|
+| Ashley|Professor|
+|Ketty|Professor|
+|Christeen|Professor|
+|Jane|Actor|
+|Jenny|Doctor|
+|Priya|Singer|
 
 *Sample Output*
 
